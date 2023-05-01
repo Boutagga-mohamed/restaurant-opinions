@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Review</title>
+    <style>
+        /* CSS styles here */
+    </style>
+</head>
+<body>
+    <ul class="navigation">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="restaurant.html">Restaurants</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <form action="search.php" method="GET">
+        <label for="cuisine-search">Search by Cuisine:</label>
+        <select id="cuisine-search" name="cuisine">
+            <option value="turkish">Turkish Cuisine</option>
+            <option value="algerian">Algerian Cuisine</option>
+            <option value="french">French Cuisine</option>
+            <!-- Add more cuisine options as needed -->
+        </select>
+        <input type="submit" value="Search">
+    </form>
+
+    <div class="restaurant-container">
+        <h1 class="restaurant-name">restaurant-name</h1>
+        <div class="restaurant-info">
+            <img src="img" class="restaurant-image">
+            <div class="restaurant-details">
+                <p>Cuisines:</p>
+                <div class="restaurant-address">
+                    <p>Address: </p>
+                </div>
+                <div class="comment">
+                    <h3>Comments:</h3>
+                    <div class="user-comment">
+                        <p><strong>User 1:</strong> Very good ambiance and friendly service.</p>
+                    </div>
+                    <div class="user-comment">
+                        <p><strong>User 2:</strong> The dishes were delicious and nicely presented.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button onclick="window.location.href = 'addresto.html';">Add a Restaurant</button>
+</body>
+</html>

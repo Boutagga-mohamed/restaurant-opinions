@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: url(https://learnenglish.britishcouncil.org/sites/podcasts/files/2021-10/RS4905_81989918-hig_0.jpg);
+            background-size: cover;
+        }
+        
+        main {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 400px;
+        }
+        
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        form label {
+            text-align: left;
+            margin-bottom: 5px;
+        }
+        
+        form input[type="text"],
+        form input[type="email"],
+        form input[type="password"] {
+            padding: 5px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        
+        form input[type="submit"] {
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        
+        p {
+            text-align: left;
+            margin-bottom: 10px;
+        }
+        
+        ul {
+            list-style: none;
+            margin-top: 20px;
+        }
+        
+        ul li {
+            display: inline-block;
+            margin-left: 10px;
+        }
+        
+        ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        th, td {
+            padding: 10px;
+            text-align: center;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Registration</h1>
+        </header>
+
+        <form action="inscription.php" method="POST">
+            <p>Please enter your information:</p>
+
+            <label for="nom">First Name:</label>
+            <input type="text" id="nom" name="nom" required>
+
+            <label for="prenom">Last Name:</label>
+            <input type="text" id="prenom" name="prenom" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <input type="submit" value="Register">
+        </form>
+
+        <p>Already have an account? <a href="login.html">Log in</a></p>
+
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="restaurant.html">Restaurant</a></li>
+            <li><a href="contact.html">Contact us</a></li>
