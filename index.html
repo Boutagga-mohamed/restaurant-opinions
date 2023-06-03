@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page d'accueil</title>
+    <style>
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            outline: none;
+            font-family: 'Tw Cen MT', sans-serif;
+        }
+
+        .container {
+            position: relative;
+            height: 100vh;
+            width: 100%;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url('https://example.com/bg-image.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: 0 8%;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 5px 0;
+        }
+
+        nav .logo {
+            width: 120px;
+            cursor: pointer;
+        }
+
+        nav .cart {
+            width: 40px;
+            cursor: pointer;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: flex-end;
+            flex: 1;
+            padding-right: 40px;
+            text-align: right;
+            list-style-type: none;
+        }
+
+        ul li {
+            margin-right: 10px;
+        }
+
+        ul li a {
+            position: relative;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: #fff;
+            font-size: 16px;
+        }
+
+        ul li a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 0;
+            transform: translateX(-50%) translateY(-5px);
+            height: 3px;
+            background: #ffa400;
+            transition: 0.3s;
+        }
+
+        ul li a:hover::after {
+            width: 38%;
+        }
+
+        .site-container {
+            position: absolute;
+            bottom: 10%;
+            color: #fff;
+        }
+
+        .site-container p {
+            font-size: 50px;
+            font-weight: bold;
+        }
+
+        .site-container h1 {
+            font-size: 120px;
+            line-height: 120px;
+            margin-left: -10px;
+            color: transparent;
+            -webkit-text-stroke: 1px white;
+            background: url('https://example.com/pattern.png');
+            -webkit-background-clip: text;
+            background-clip: text;
+            background-position: 0 0;
+            animation: animate 20s linear 2s infinite alternate;
+        }
+
+        @keyframes animate {
+            100% {
+                background-position: -500px 0;
+            }
+        }
+
+        .site-container h4 {
+            font-size: 40px;
+            font-weight: 500;
+        }
+
+        .site-container .row {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+
+        .row a {
+            display: flex;
+            align-items: center;
+            padding: 5px 20px;
+            text-decoration: none;
+            color: #fff;
+            border: 1px solid #fff;
+            margin-right: 40px;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+
+        .row a:hover {
+            background-color: #fff;
+            color: #000;
+        }
+
+        .row a.login-button {
+            border: 1px solid #fff;
+            padding: 9px 19px;
+        }
+
+        .row a.login-button:hover {
+            background-color: #fff;
+            color: #000;
+        }
+
+        .row a span {
+            font-size: 15px;
+            font-weight: bold;
+            line-height: 2;
+            margin-left: 10px;
+        }
+
+        .row span {
+            font-size: 18px;
+        }
+
+        .social-icons {
+            position: absolute;
+            right: 5%;
+            bottom: 8%;
+        }
+
+        .social-icons a {
+            padding: 5px;
+            margin-right: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <img src="images/wanen_white.png" alt="" class="logo" />
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="restaurant.php">Restaurant</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html" class="login-button">Login</a></li>
+               <li> <a href="logout.php">Logout</a></li>
+
+            </ul>
+            <img src="images/cart.png" alt="" class="cart" />
+        </nav>
+
+        <section class="site-container">
+            <p>Welcome to</p>
+            <h1>Restaurent Reviews</h1>
+            <h4>Discover and share your dining experiences at the finest restaurants around.</h4>
+            <h4>Whether you're a food lover, a passionate critic, or simply looking for a new place to try, our community-driven platform offers honest and insightful reviews to help you make informed decisions.</h4>
+
+            <div class="row">
+                <a href="Register.html">Registre</a>
+                <a href="restaurant.php">Restaurant<span>&#x27f6;</span></a>
+            </div>
+        
+</body>
+</html>

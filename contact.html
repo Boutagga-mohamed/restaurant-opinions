@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://example.com/new-background-image.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        
+        main {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 400px;
+        }
+        
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        form label {
+            text-align: left;
+            margin-bottom: 5px;
+        }
+        
+        form input[type="text"],
+        form input[type="email"],
+        form textarea {
+            padding: 5px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        
+        form textarea {
+            resize: vertical;
+        }
+        
+        form input[type="submit"] {
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        
+        p {
+            text-align: left;
+            margin-bottom: 10px;
+        }
+        
+        ul {
+            list-style: none;
+            margin-top: 20px;
+        }
+        
+        ul li {
+            display: inline-block;
+            margin-left: 10px;
+        }
+        
+        ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        th, td {
+            padding: 10px;
+            text-align: center;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Contact Us</h1>
+        </header>
+
+        <form action="contact.php" method="POST">
+            <p>Please fill out the form below to contact us:</p>
+
+            <label for="nom">Name:</label>
+            <input type="text" id="nom" name="nom" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <input type="submit" value="Send">
+        </form>
+
+        <ul>
+            
+            <li><a href="index.html">Home</a></li>
+            <li><a href="restaurant.php">Restaurant</a></li>
+            <li><a href="#">Contact us</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </main>
+</body>
+</html> 
